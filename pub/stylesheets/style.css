@@ -1,0 +1,115 @@
+@import url(http://fonts.googleapis.com/css?family=Arvo);
+
+html, body{height:100%;}
+
+body
+{
+	min-height: 100%;
+	background:url('/images/background.jpg') no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+
+	padding: 50px;
+	font-family: 'Arvo', serif;
+	color: #FFF;
+}
+
+h1,h2,h3,p,ul,li,form{margin:0;padding:0;}
+h2,h3{font-size:120%;}
+
+a {color: #E14A8D;text-decoration:none;}
+a:hover {color: #871354;}
+
+#header{margin-bottom:10px;}
+
+#container
+{
+	max-width:860px;
+	min-height: 100%;
+	overflow:hidden;
+}
+
+#footer{text-align: right;margin: 10px 0;}
+#footer a{color: rgb(255,255,255); text-decoration: underline;}
+#footer a:hover{color: #E14A8D;}
+
+#blogapp
+{
+	padding: 20px;
+	background: rgba(255,255,255,0.8);
+	overflow:hidden;
+	color: #000;
+}
+
+#blogapp .responsive
+{
+	width:100% !important;
+	min-width:100% !important;
+	max-width: auto !important;
+}
+
+#blogapp .success{color:#25880A;}
+#blogapp .failure{color:#A90329;}
+
+#blogapp header.blogHeader{overflow:hidden;}
+
+#blogapp section.containerArticles{margin-top:20px;width:500px;float:left;}
+#blogapp article.blogPost {margin-bottom:20px;padding:20px;background:#FFF;overflow:hidden;color:#555;}
+#blogapp article.blogPost header{margin-bottom:10px;}
+#blogapp article.blogPost footer{border-top:1px solid #EEE;color:#BBB;text-align: right;}
+
+#blogapp section.containerPanel{margin-top:20px;width:280px;float:right;text-align:right;}
+
+#blogapp div.containerForm {background: #FFF;padding:20px;}
+#blogapp div.containerForm h2{text-align:left;}
+#blogapp div.containerFormLogin h2{text-align:right;}
+
+#blogapp div.containerForm textarea,input{margin-bottom:4px;}
+#blogapp div.containerForm input[type="text"],
+#blogapp div.containerForm input[type="password"],
+#blogapp div.containerForm textarea
+{
+	width:100%;
+	background:#E14A8D;
+	color:#FFF;
+	outline: none;
+	border: 1px solid #DBA4BE;
+}
+
+#blogapp div.containerForm textarea{height:300px;resize:vertical;}
+
+#blogapp nav.blogMenu {float:left;overflow:hidden;}
+#blogapp nav.blogMenu ul{display:inline;list-style-type: none;}
+#blogapp nav.blogMenu ul li{float:left;margin-right:8px;}
+
+#blogapp p.blogStatusHeader{float:right;}
+#blogapp p.blogStatusForm{background:#FFF;padding: 0 20px 20px  0;}
+
+#blogapp div.containerRecentUpdates{background:#FFF;padding:20px;}
+#blogapp div.containerRecentUpdates ul 
+{
+	list-style-type: none;
+}
+
+@media(max-width: 968px)
+{
+	body{padding: 10px;}
+
+	#blogapp section.containerArticles
+	{
+		float:none;
+		width:100%;
+		margin: 0 auto 20px;
+	}
+
+	#blogapp section.containerPanel
+	{
+		text-align:center;
+		
+		float:none;
+		width:100%;
+		margin: 0 auto;
+		padding:0;
+	}
+}
+

@@ -1,0 +1,24 @@
+{{#each items}}
+
+<article class='blogPost'>
+	<header>
+		<a href='#single/{{id}}'><h3>{{ title }}</h3></a>
+		<p>Published: <time pubdate="pubdate">{{ dateFormated createdAt }}</time></p>
+	</header>
+	
+	<p class='postContent'>{{ textContent }}</p>
+	
+	<footer>
+	<p><small>Last Update: <time pubdate="pubdate">{{ timeAgo updatedAt }}</time></small></p>
+	<p>
+		<small>
+			{{#if ../authorized}}
+			<a href='#edit/{{id}}' class='edit'>Edit</a>
+			<a href='#' class='delete' data-id='{{id}}'>Delete</a>
+			{{/if}}
+		</small>
+	</p>
+	</footer>
+</article>
+
+{{/each}}
